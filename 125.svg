@@ -1,0 +1,40 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 720 1280" xml:space="preserve">
+  <!-- 黑色背景 -->
+  <rect width="100%" height="100%" fill="black"></rect>
+
+  <!-- 动态渐变和发光效果 -->
+  <defs>
+    <!-- 随机化颜色渐变 -->
+    <linearGradient id="rainbow-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF0000">
+        <animate attributeName="stop-color" values="#FF0000;#FF7F00;#FFFF00;#00FF00;#0000FF;#4B0082;#8F00FF;#FF0000" dur="6s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#FFFF00">
+        <animate attributeName="stop-color" values="#FFFF00;#00FF00;#0000FF;#4B0082;#8F00FF;#FF0000;#FF7F00;#FFFF00" dur="6s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#0000FF">
+        <animate attributeName="stop-color" values="#0000FF;#4B0082;#8F00FF;#FF0000;#FF7F00;#FFFF00;#00FF00;#0000FF" dur="6s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- 随机方向发光效果 -->
+    <filter id="random-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur" />
+      <feOffset dx="5" dy="5" result="offsetBlur1" />
+      <feOffset dx="-5" dy="-5" result="offsetBlur2" />
+      <feMerge>
+        <feMergeNode in="offsetBlur1" />
+        <feMergeNode in="offsetBlur2" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- LOGO路径 -->
+  <g fill="none" stroke="url(#rainbow-gradient)" stroke-width="2" filter="url(#random-glow)">
+    <path d="M236.42,764.2c-31-0.85-42.07-13.87-42.07-13.87c17.71-15.11,42.07-14.01,42.07-14.01c-0.94-23.16,13.53-42.56,13.53-42.56s14.46,19.41,13.53,42.56c0,0,24.36-1.1,42.07,14.01c0,0-11.06,13.02-42.07,13.87c0,0,0.38,24.6-13.53,42.67C236.03,788.8,236.42,764.2,236.42,764.2z M249.94,758.24c4.37,0,7.93-3.57,7.93-7.94s-3.56-7.94-7.93-7.94s-7.93,3.57-7.93,7.94C242.01,754.67,245.57,758.24,249.94,758.24z" />
+    <path d="M456.53,544.09c-31-0.85-42.07-13.88-42.07-13.88c17.71-15.12,42.07-14.01,42.07-14.01c-0.94-23.16,13.53-42.57,13.53-42.57s14.46,19.41,13.53,42.57c0,0,24.36-1.1,42.07,14.01c0,0-11.06,13.02-42.07,13.88c0,0,0.38,24.6-13.53,42.66C456.14,568.69,456.53,544.09,456.53,544.09z M470.05,538.13c4.37,0,7.93-3.57,7.93-7.94s-3.56-7.94-7.93-7.94s-7.93,3.57-7.93,7.94S465.68,538.13,470.05,538.13z" />
+    <path d="M483.95,763.82c-0.85,31-13.87,42.07-13.87,42.07c-15.12-17.71-14.01-42.07-14.01-42.07c-23.16,0.94-42.57-13.52-42.57-13.52s19.41-14.46,42.57-13.53c0,0-1.1-24.36,14.01-42.07c0,0,13.02,11.07,13.87,42.07c0,0,24.6-0.38,42.66,13.53C508.55,764.21,483.95,763.82,483.95,763.82z M477.99,750.3c0-4.37-3.57-7.94-7.94-7.94s-7.93,3.57-7.93,7.94s3.56,7.93,7.93,7.93C474.43,758.23,477.99,754.67,477.99,750.3z" />
+    <!-- 添加更多路径 -->
+  </g>
+</svg>
