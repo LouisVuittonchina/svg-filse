@@ -1,5 +1,4 @@
-<section data-role="paragraph" class="_135editor">
-	<p>
+
 		<svg version="1.1" baseprofile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 720 1280" xml:space="default" >
 			<!-- 黑色背景 -->
 			<rect width="100%" height="100%" fill="black"></rect><!-- 毛玻璃效果定义 -->
@@ -93,5 +92,3 @@
 		c-4.37,0-7.94,3.56-7.94,7.93s3.57,7.94,7.94,7.94s7.93-3.57,7.93-7.94S147.37,849.31,143,849.31z"/>
 			</g>
 		</svg>
-	</p>
-</section>
