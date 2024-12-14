@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=720, initial-scale=1.0">
+  <title>GIF SVG Animation</title>
+  <style>
+    #container {
+      position: relative;
+      width: 720px;
+      height: 1280px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+    #container img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.1s ease-in-out;
+    }
+    #frame1 { animation: showFrame 14.7s infinite 0s; }
+    #frame2 { animation: showFrame 14.7s infinite 2.1s; }
+    #frame3 { animation: showFrame 14.7s infinite 4.2s; }
+    #frame4 { animation: showFrame 14.7s infinite 6.3s; }
+    #frame5 { animation: showFrame 14.7s infinite 8.4s; }
+    #frame6 { animation: showFrame 14.7s infinite 10.5s; }
+    #frame7 { animation: showFrame 14.7s infinite 12.6s; }
+
+    @keyframes showFrame {
+      0%, 98% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <img id="frame1" src="https://mmbiz.qpic.cn/sz_mmbiz_gif/fYVhA8wpRdC1IlyibNxgFC0XibTVRd8murpBwoejnE3QR9CTvIYWE0aIXFzcp0avGJ9oibtGeUYd1s1b3SmJnOfeQ/640?wx_fmt=gif&from=appmsg" alt="Frame 1">
+    <img id="frame2" src="https://mmbiz.qpic.cn/sz_mmbiz_gif/fYVhA8wpRdC1IlyibNxgFC0XibTVRd8murIEmicvcIicZRtYYjubyGYHAdrwqS53TmjUEErvQRxrtYHibHb7ibJdOmnA/640?wx_fmt=gif&from=appmsg" alt="Frame 2">
+    <img id="frame3" src="https://mmbiz.qpic.cn/sz_mmbiz_gif/fYVhA8wpRdC1IlyibNxgFC0XibTVRd8murlSAmon3WQL1LSHnoEBp1SKFafZPKkYSEenZTjQm628dIgIInQqtf6Q/640?wx_fmt=gif&from=appmsg" alt="Frame 3">
+    <img id="frame4" src="https://mmbiz.qpic.cn/sz_mmbiz_gif/fYVhA8wpRdC1IlyibNxgFC0XibTVRd8murDH9vvs2j4Rhiao48BZUHMia8GtSyTLVNvq3QlicOMZ68qjS8ibJgzeOJlg/640?wx_fmt=gif&from=appmsg" alt="Frame 4">
+    <img id="frame5" src="https://mmbiz.qpic.cn/sz_mmbiz_gif/fYVhA8wpRdC1IlyibNxgFC0XibTVRd8murZH2icyHTLrVr2UvkGQTick94zKrw5c0cLUgiavkibE9xXujP6XnBPoiaRCw/640?wx_fmt=gif&from=appmsg" alt="Frame 5">
+    <img id="frame6" src="https://mmbiz.qpic.cn/sz_mmbiz_gif/fYVhA8wpRdC1IlyibNxgFC0XibTVRd8murdqhRibfPqTHdVRC6gQBtW4U2hjme3X5np5qq9E7Zdwb8FtKicx762qoQ/640?wx_fmt=gif&from=appmsg" alt="Frame 6">
+    <img id="frame7" src="https://mmbiz.qpic.cn/sz_mmbiz_gif/fYVhA8wpRdC1IlyibNxgFC0XibTVRd8mur5mI3UIQMJNnOtSiabeYQcBhxbQT46V53hx96yEANaEbdJs3hic9tCB7w/640?wx_fmt=gif&from=appmsg" alt="Frame 7">
+  </div>
+</body>
+</html>
 
